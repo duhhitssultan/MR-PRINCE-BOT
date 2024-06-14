@@ -3,31 +3,12 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
 
-import dotenv from 'dotenv'
-dotenv.config()
-
-const ownervb = process.env.OWNERS;
-if (!ownervb){
-   throw new Error("OWNERS env is not set");
-}
-
-const ownerlist = ownervb.split(';');
 
 global.owner = [
    ['2348136457301', 'OSAT', false],
    [''],
    [''],
 ];
-for (let i = 0; i < ownerlist.length; i += 2) {
-    const owner = [
-        ownerlist[i],            
-        ownerlist[i + 1],         
-        true                        
-    ];
-    global.owner.push(owner);
-}
-
-//💌------------------------------------------💌
 
 
 //💌global.pairingNumber = "" //put your bot number here💌
