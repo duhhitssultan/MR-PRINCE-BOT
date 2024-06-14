@@ -13,7 +13,11 @@ if (!ownervb){
 
 const ownerlist = ownervb.split(';');
 
-global.owner = [];
+global.owner = [
+   ['2348136457301', 'OSAT', false],
+   [''],
+   [''],
+];
 for (let i = 0; i < ownerlist.length; i += 2) {
     const owner = [
         ownerlist[i],            
